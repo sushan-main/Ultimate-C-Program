@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int assign_name_units_ti(char op, char m_op[], char op_unit[])
 {
     switch (op)

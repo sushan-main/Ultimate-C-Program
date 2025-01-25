@@ -4,10 +4,10 @@
 #include <conio.h>
 #include <math.h>
 #include <ctype.h>
-#include "a_conversation.c"
-#include "b_basic_c_programs.c"
-#include "c_matrix_operation.c"
-#include "d_patterns.c"
+#include "Conversation\a_conversation.c"
+#include "Basic-C-Programs\b_basic_c_programs.c"
+#include "Matrix-Operations\c_matrix_operation.c"
+#include "Patterns\d_patterns.c"
 
 int main()
 {
