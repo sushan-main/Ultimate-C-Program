@@ -251,6 +251,7 @@ void dictionary()
     do
     {
         system("cls");
+        fflush(stdin);
         printf("\nDictionary Menu:\n");
         printf("1. Add Word\n");
         printf("2. Display Words\n");
@@ -261,7 +262,6 @@ void dictionary()
         printf("7. Save and Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-
         switch (choice)
         {
         case 1:
@@ -289,6 +289,9 @@ void dictionary()
             exit(0);
         default:
             printf("Invalid choice!\n");
+            printf("\nPress Any Key to Continue...\n");
+            getch();
+            continue;
         }
         printf("\nPress Any Key to Continue...\n");
         getch();
