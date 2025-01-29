@@ -12,20 +12,21 @@ void conversion()
     char a_main;
     do
     {
+        system("cls");
         fflush(stdin);
-        printf("\nA]\tWelcome to the Conversation Section\n");
-        printf("\t------------------------------------\n");
-        printf("\t1. Length Conversation\n");
-        printf("\t2. Mass Conversation\n");
-        printf("\t3. Area Conversation\n");
-        printf("\t4. Volume Conversation\n");
-        printf("\t5. Temperature Conversation\n");
-        printf("\t6. Data Conversation\n");
-        printf("\t7. Speed Conversation\n");
-        printf("\t8. Time Conversation\n");
-        printf("\t0. Return Back\n");
-        printf("\tx. Terminate Process\n");
-        printf("\t------------------------------------\n");
+        printf("\nA] Welcome to the Conversation Section\n");
+        printf("------------------------------------\n");
+        printf("1. Length Conversation\n");
+        printf("2. Mass Conversation\n");
+        printf("3. Area Conversation\n");
+        printf("4. Volume Conversation\n");
+        printf("5. Temperature Conversation\n");
+        printf("6. Data Conversation\n");
+        printf("7. Speed Conversation\n");
+        printf("8. Time Conversation\n");
+        printf("0. Return Back\n");
+        printf("x. Terminate Process\n");
+        printf("------------------------------------\n");
         printf("\nEnter your option: ");
         scanf("%c", &a_main);
         switch (a_main)
@@ -66,6 +67,6 @@ void conversion()
             printf("Input Error!!\n");
             break;
         }
-            getch();
+        getch();
     } while (a_main != '0');
 }

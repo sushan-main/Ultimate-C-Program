@@ -7,6 +7,7 @@ int series_upto_nth_term()
     int n, ret_b5;
     do
     {
+        system("cls");
         ret_b5 = 0;
         printf("\nEnter the value of n: ");
         scanf("%d", &n);
@@ -21,5 +22,7 @@ int series_upto_nth_term()
         {
             printf("Please enter a positive integer.\n");
         }
+        printf("\nPress Any Key to Continue...\n");
+        getch();
     } while (ret_b5 == 455);
 }

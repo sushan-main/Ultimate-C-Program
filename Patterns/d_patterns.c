@@ -193,6 +193,7 @@ int patterns_in_c()
     char type, choice;
     do
     {
+        system("cls");
         printf("\nD] Choose a pattern:\n");
         printf("1. Right Half Pyramid\n");
         printf("2. Inverted Right Half Pyramid\n");
@@ -249,6 +250,7 @@ int patterns_in_c()
         default:
             printf("Invalid choice. Please try again.\n");
         }
+        printf("\nPress Any Key to Continue...\n");
         getch();
     } while (choice != '0');
 }

@@ -7,6 +7,7 @@ int series_from_n1_to_n2_term()
     int first_term, n, ret_b6;
     do
     {
+        system("cls");
         ret_b6 = 0;
         printf("\nEnter \"From\" and \"To\"\n");
         printf("Starting Number--> ");
@@ -29,5 +30,7 @@ int series_from_n1_to_n2_term()
         {
             printf("Please enter a positive integer.\n");
         }
+        printf("\nPress Any Key to Continue...\n");
+        getch();
     } while (ret_b6 == 455);
 }

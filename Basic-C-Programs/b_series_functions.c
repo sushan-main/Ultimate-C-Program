@@ -384,6 +384,5 @@ int series_decider(int first_term, int n, int upto_n)
         {
             printf("\nSum of Series = %d\n", sum_of_series);
         }
-        getch();
     } while (b_choice[1] != '0' && b_choice[1] != 'u' && b_choice[1] != 'U');
 }

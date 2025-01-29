@@ -7,6 +7,7 @@ void two_variable_basic_c_problems()
     int a, b;
     do
     {
+        system("cls");
         printf("\nEnter First Variable: ");
         scanf("%d", &a);
         printf("Enter Second Variable: ");
@@ -77,7 +78,8 @@ void two_variable_basic_c_problems()
                 printf("Input Error!!\n");
                 break;
             }
-            getch();
         } while (b_2 != '0' && b_2 != 'u' && b_2 != 'U');
+        printf("\nPress Any Key to Continue...\n");
+        getch();
     } while (b_2 != '0');
 }

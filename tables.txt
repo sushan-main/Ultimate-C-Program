@@ -1,0 +1,7 @@
+Table: GuruDev
+3
+Id i 4
+Name s 20
+Ph.no i 4
+0
+

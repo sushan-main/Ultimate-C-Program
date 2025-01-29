@@ -106,6 +106,7 @@ void matrix_operation()
     char mat_option;
     do
     {
+        system("cls");
         printf("\nEnter no of Matrices you want: (Either 1 or 2 only)\n");
         scanf("%d", &mat_no);
         if (mat_no == 1)
@@ -151,7 +152,6 @@ void matrix_operation()
                     printf("Input Error!!\n");
                     break;
                 }
-                getch();
             } while (mat_option != 'u' && mat_option != 'U' && mat_option != '0');
         }
         else if (mat_no == 2)
@@ -226,8 +226,9 @@ void matrix_operation()
                     printf("Input Error!!\n");
                     break;
                 }
-                getch();
             } while (mat_option != 'u' && mat_option != 'U' && mat_option != '0');
         }
+        printf("\nPress Any Key to Continue...\n");
+        getch();
     } while (mat_no != '0' && mat_option != '0');
 }

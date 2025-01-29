@@ -42,7 +42,9 @@ int assign_name_units_ar(char op, char m_op[], char op_unit[])
         exit(1);
         break;
     default:
-        printf("Input Error!!\n");
+        printf("Input Error!! Press any key to continue\n");
+        getch();
+        return 0;
         break;
     }
 }
@@ -112,7 +114,7 @@ int ar_conver()
     float op1_value, op2_value;
     do
     {
-
+        system("cls");
         printf("\nChoose \"From\" and \"To\"\n");
         printf("1. Sq. Meters(m^2)\n");
         printf("2. Sq. Centimeters(cm^2)\n");
@@ -123,23 +125,25 @@ int ar_conver()
         printf("7. Hectares(ha)\n");
         printf("0. Return Back\n");
         printf("x. Terminate Process\n");
-        printf("From--> ");
+        printf("(Example: When From--> 1 From--> 2, Sq. Meters to Sq. Centimeters)\n\n");
+        printf("From--> ");        
         fflush(stdin);
         scanf("%c", &op1);
         int a = assign_name_units_ar(op1, m_op1, op1_unit);
-        if (a == 99)
+        if (a == 99 || a == 0)
             continue;
         printf("To--> ");
         fflush(stdin);
         scanf("%c", &op2);
         int b = assign_name_units_ar(op2, m_op2, op2_unit);
-        if (b == 99)
+        if (b == 99 || b == 0)
             continue;
         printf("\n%s(%s) --> %s(%s)", m_op1, op1_unit, m_op2, op2_unit);
         printf("\nEnter length in %s(%s): ", m_op1, op1_unit);
         scanf("%f", &op1_value);
         op2_value = unit_conver_ar(op1, op1_value, op2);
         printf("\n%.2f %s = %.2f %s\n", op1_value, op1_unit, op2_value, op2_unit);
+        printf("\nPress Any Key to Continue...\n");
         getch();
     } while (op1 != '0' && op2 != '0');
 }

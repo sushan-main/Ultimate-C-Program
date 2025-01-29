@@ -203,6 +203,7 @@ void miscellaneous_programs()
     char choice, name[100];
     do
     {
+        system("cls");
         fflush(stdin);
         printf("\nChoose a C program:\n");
         printf("1. Multiplication Table\n");
@@ -273,6 +274,7 @@ void miscellaneous_programs()
         default:
             printf("\nInvalid choice. Please try again.\n");
         }
+        printf("\nPress Any Key to Continue...\n");
         getch();
     } while (choice != '0');
 }

@@ -8,12 +8,14 @@
 #include "Basic-C-Programs\b_basic_c_programs.c"
 #include "Matrix-Operations\c_matrix_operation.c"
 #include "Patterns\d_patterns.c"
+#include "Dictionary\e_simple_dictionary.c"
 
 int main()
 {
     char main_op;
     while (1)
     {
+        system("cls");
         fflush(stdin);
         printf("\nWelcome to the ULTIMATE C PROGRAM to ever exist!!\n");
         printf("-------------------------------------------------\n");
@@ -21,6 +23,7 @@ int main()
         printf("B. Basic C Programs\n");
         printf("C. Matrix Operations\n");
         printf("D. Pattern Programs in C\n");
+        printf("E. Simple Dictionary\n");
         printf("x. Terminate Process\n");
         printf("-------------------------------------------------\n");
         printf("\nEnter your option: ");
@@ -44,10 +47,14 @@ int main()
         case 'd':
             patterns_in_c();
             break;
+        case 'E':
+        case 'e':
+            dictionary();
+            break;
         case 'x':
         case 'X':
             printf("\nShutting down...\n");
-            exit(1);
+            exit(0);
             break;
         default:
             printf("\nInput Error!!!\n");

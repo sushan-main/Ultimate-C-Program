@@ -7,6 +7,7 @@ void one_variable_basic_c_problems()
     int n;
     do
     {
+        system("cls");
         printf("\nEnter the value of n: ");
         scanf("%d", &n);
         printf("\n1. Check Whether a Number is Positive, Negative, or Zero\n");
@@ -84,7 +85,8 @@ void one_variable_basic_c_problems()
                 printf("Input Error!!\n");
                 break;
             }
-            getch();
         } while (b_1 != '0' && b_1 != 'u' && b_1 != 'U');
+        printf("\nPress Any Key to Continue...\n");
+        getch();
     } while (b_1 != '0');
 }

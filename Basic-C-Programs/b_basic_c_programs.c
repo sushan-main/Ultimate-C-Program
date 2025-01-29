@@ -15,20 +15,21 @@ void basic_c_programs()
     char b_main;
     do
     {
+        system("cls");
         fflush(stdin);
-        printf("\nB]\tTry out some of the basic c programs below\n");
-        printf("\t------------------------------------\n");
-        printf("\t1. Programs involving one variable\n");
-        printf("\t2. Programs involving two variables\n");
-        printf("\t3. Programs involving three variables\n");
-        printf("\t4. Series upto n term\n");
-        printf("\t5. Series upto nth term\n");
-        printf("\t6. Series from n1 to n2 term\n");
-        printf("\t7. Integer and String Arrays\n");
-        printf("\t8. Miscellaneous Programs\n");
-        printf("\t0. Return Back\n");
-        printf("\tx. Terminate Process\n");
-        printf("\t------------------------------------\n");
+        printf("\nB] Try out some of the basic c programs below\n");
+        printf("------------------------------------\n");
+        printf("1. Programs involving one variable\n");
+        printf("2. Programs involving two variables\n");
+        printf("3. Programs involving three variables\n");
+        printf("4. Series upto n term\n");
+        printf("5. Series upto nth term\n");
+        printf("6. Series from n1 to n2 term\n");
+        printf("7. Integer and String Arrays\n");
+        printf("8. Miscellaneous Programs\n");
+        printf("0. Return Back\n");
+        printf("x. Terminate Process\n");
+        printf("------------------------------------\n");
         printf("\nEnter your option: ");
         scanf("%s", &b_main);
         switch (b_main)
@@ -69,6 +70,7 @@ void basic_c_programs()
             printf("Input Error!!\n");
             break;
         }
+        printf("\nPress Any Key to Continue...\n");
         getch();
     } while (b_main != '0');
 }
